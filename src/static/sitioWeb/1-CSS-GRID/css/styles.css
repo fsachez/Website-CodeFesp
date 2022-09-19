@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #e9ecf4;
+  color: #000;
+  font-family: "Roboto", sans-serif;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, auto);
+
+  /* Forma mas recomendada de hacer responsive la páguina */
+  grid-template-areas: 
+  "header header header" 
+  "contenido contenido sidebar" 
+  "widget-1 widget-2 sidebar" 
+  "footer footer footer";
+}
+
+.contenedor > div,
+.contenedor .header,
+.contenedor .footer,
+.contenedor .sidebar,
+.contenedor .contenido {
+  background: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.contenedor .header {
+  background: #12203e;
+  color: #fff;
+
+  /* Responsive */
+  /* grid-column-start: 1;
+    grid-column-end: -1; */
+
+  /* Forma mas recomendada de hacer responsive la páguina */
+  grid-area: header;
+}
+
+.contenedor .contenido {
+  /* Responsive */
+  /* grid-column: span 2; */
+
+  /* Forma mas recomendada de hacer responsive la páguina */
+  grid-area: contenido;
+}
+
+.contenedor .sidebar {
+  background: #faa43d;
+  grid-column: 3 / 4;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px;
+
+  /* Responsive */
+  /* grid-row: span 2; */
+
+  /* Forma mas recomendada de hacer responsive la páguina */
+  grid-area: sidebar;
+}
+
+.contenedor .widget-1,
+.contenedor .widget-2 {
+  background: #55a8fd;
+  color: #fff;
+  height: 100px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor .widget-1 {
+  grid-area: widget-1;
+}
+
+.contenedor .widget-2 {
+  grid-area: widget-2;
+}
+
+.contenedor .footer {
+  background: #12203e;
+  color: #fff;
+
+  /* Responsive */
+  /* grid-column: span 3; */
+
+  /* Forma mas recomendada de hacer responsive la páguina */
+  grid-area: footer;
+}
+
+/* Hacer responsive la páguina */
+
+/* @media  screen and (max-width: 768px) {
+    body {
+        background: rgb(61, 60, 60);
+
+    }
+
+    .contenedor .contenido {
+        grid-column: 1 / -1;
+    }
+
+    .contenedor .sidebar {
+        grid-column: 1 / -1;
+    }
+
+    .contenedor .widget-1 {
+        grid-column: span 2;
+    }
+} */
+
+/* Forma mas recomendada de hacer responsive la páguina */
+
+@media screen and (max-width: 768px){
+    .contenedor {
+        grid-template-areas: 
+        "header header header" 
+        "contenido contenido contenido" 
+        "sidebar sidebar sidebar"
+        "widget-1 widget-1 widget-2" 
+        "footer footer footer";
+    }
+}

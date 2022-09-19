@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to right, purple, #00aaff, #00ff6c);
+}
+
+#app {
+  background-color: white;
+  width: 500px;
+  margin: 0 auto;
+  border: solid 1px #ccc;
+  padding: 20px;
+}
+
+#time {
+  text-align: center;
+  padding: 20px 0;
+}
+
+#time #value {
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: solid 1px #ccc;
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+button,
+input[type="submit"] {
+  border: none;
+  /* background-color: #003366; */
+  background: linear-gradient(to right, purple, #00aaff, #00ff6c);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.task {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.task .completed {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.done {
+  display: inline-block;
+  padding: 5px;
+  background: #ccc;
+}
+
+@media screen and (max-width: 500px) {
+  #app {
+    width: 300px;
+    transition: 0.3s ease all;
+    -webkit-transition: 0.3s ease all;
+    -moz-transition: 0.3s ease all;
+    -ms-transition: 0.3s ease all;
+    -o-transition: 0.3s ease all;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  #app {
+    transition: 0.3s ease all;
+    -webkit-transition: 0.3s ease all;
+    -moz-transition: 0.3s ease all;
+    -ms-transition: 0.3s ease all;
+    -o-transition: 0.3s ease all;
+  }
+}

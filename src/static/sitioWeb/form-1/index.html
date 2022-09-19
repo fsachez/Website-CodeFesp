@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="./css/styles1.css">
+  <title>Formulario</title>
+</head>
+
+<body>
+  <div role="form" class="form-contenm">
+    <section class="paragarph">
+      <div class="paragarph-container-title">
+        <h1 class="align-center">RESOLUCIÓN CREG 174 de 2021</h1>
+      </div>
+      <div class="paragarph-container-text">
+        <p class="ql-align-center">
+          Hola. Gracias por diligenciar este formulario, si tiene dudas de cómo hacerlo, no dudes en contactar a tu
+          ejecutivo de cuenta o llamarnos a la liena
+          <strong>018000112115</strong>
+        </p>
+      </div>
+    </section>
+    <form action="" method="post" class="form-init" novalidate="novalidate" data-status="init">
+      <div class="contenm-wrapper">
+        <div class="bouble-column">
+          <label for="">
+            Tipo de documento
+            <br />
+            <span class="form-control-wrap your-document-type">
+              <select name="your-document-type" class="form-control select your-document-type validates-as-required"
+                aria-required="true" aria-invalid="false">
+                <option value="Seleccione">Seleccione</option>
+                <option value="Cedula de ciudadanía">
+                  Cedula de ciudadanía
+                </option>
+                <option value="Pasaporte">Pasaporte</option>
+                <option value="Cedula extranjería">Cedula extranjería</option>
+                <option value="NIT">NIT</option>
+              </select>
+            </span>
+          </label>
+          <br />
+          <label for="">
+            Número de documento
+            <br />
+            <span class="form-control-wrap your-document">
+              <input type="text" name="your-document" value size="40" class="form-control text validates-as-required"
+                aria-required="true" aria-invalid="false">
+            </span>
+          </label>
+        </div>
+        <br>
+        <div class="bouble-column">
+          <label for="">
+            Nombres
+            <br />
+            <span class="form-control-wrap your-name">
+              <input type="text" name="your-name" value size="40" class="form-control text validates-as-required"
+                aria-required="true" aria-invalid="false">
+            </span>
+          </label>
+          <br>
+          <label for="">
+            Apellidos
+            <br />
+            <span class="form-control-wrap your-lastName">
+              <input type="text" name="your-lastName" value size="40" class="form-control text validates-as-required"
+                aria-required="true" aria-invalid="false">
+            </span>
+          </label>
+        </div>
+        <div class="single-column">
+          <label for="">
+            Quien es tu comercializador de energía
+            <br />
+            <span class="form-control-wrap your-suplier">
+              <select name="your-suplier" class="form-control select your-suplier validates-as-required"
+                aria-required="true" aria-invalid="false">
+                <option value="Seleccione">Seleccione</option>
+                <option value="Celsia">
+                  Celsia
+                </option>
+                <option value="Cetsa">Cetsa</option>
+                <option value="Otro (nombre)">Otro (nombre)</option>
+              </select>
+            </span>
+          </label>
+        </div>
+        <div class="single-column">
+          <label for="">
+            Código de cuenta
+            <br />
+            <span class="form-control-wrap your-code">
+              <input type="text" name="your-code" value class="form-control number your-code validates-as-number"
+                aria-invalid="false">
+            </span>
+          </label>
+        </div>
+        <div class="p-text">
+          <p>
+            *Si eres persona natural, digita tu nombre y cédula, si eres el responsable de una empresa, por favor pon el
+            nombre de tu organización y el NIT.
+          </p>
+        </div>
+        <div class="single-column">
+          <label for="">
+            Seleccione tu departamento
+            <br />
+            <span class="form-control-wrap your-department">
+              <select name="your-department" class="form-control select your-department validates-as-required"
+                aria-required="true" aria-invalid="false">
+                <option value="Seleccione">Seleccione</option>
+                <option value="Valle del Cauca">
+                  Valle del Cauca
+                </option>
+                <option value="Tolima">Tolima</option>
+              </select>
+            </span>
+          </label>
+        </div>
+        <div class="p-title">
+          <p>Potencia de tu sistma (kw)</p>
+        </div>
+        <div class="single-column">
+          <label for="">
+            Tipo de geeneración
+            <br />
+            <span class="form-control-wrap your-generation-typ">
+              <select name="your-generation-typ" class="form-control select your-generation-typ validates-as-required"
+                aria-required="true" aria-invalid="false">
+                <option value="Seleccione">Seleccione</option>
+                <option value="Generador distribuido">
+                  Generador distribuido
+                </option>
+                <option value="Autogenerador a pequeña escala">Autogenerador a pequeña escala</option>
+                <option value="Autogenerador a gran escala">Autogenerador a gran escala</option>
+              </select>
+            </span>
+          </label>
+          <br />
+          <label for="">
+            Capacidad instalada o nomidal
+            <br />
+            <span class="form-control-wrap your-capacity">
+              <input type="number" name="your-capacity" value class="form-control number" aria-invalid="false">
+            </span>
+          </label>
+          <br />
+          <label for="">
+            Potencia máxima declarada
+            <br />
+            <span class="form-control-wrap your-power">
+              <input type="number" name="your-power" value class="form-control number" aria-invalid="false">
+            </span>
+          </label>
+        </div>
+        <div class="single-column">
+          <span class="form-control-wrap your-consent">
+            <span class="form-control acceptance">
+              <span class="list-item">
+                <input type="checkbox" name="your-consent" id="your-consent" value="Enviar" aria-invalid="false">
+                <label for="your-consent" class="checkbox">
+                  <span class="list-item-label">
+                    Acepto los términos y condiciones. Asimismo, autorizo de manera expresa, voluntaria, previa,
+                    informada e inequívoca a Celsia para tratar mis datos personales de acuerdo con la política de
+                    tratamiento de datos que se encuentra publicada
+                    <a href="https://www.celsia.com/wp-content/uploads/2021/10/Politica-de-tratamiento-de-datos-personale-Celsia_2021.pdf"
+                      target="_blank" rel="noopener noreferrer"> aquí </a>
+                    y los
+                    <a href="../index.html">términos y condiciones.</a>
+                    <!-- https://www.celsia.com/wp-content/uploads/2021/06/terminos-y-condiciones-celsia-3.pdf -->
+                  </span>
+                </label>
+              </span>
+            </span>
+          </span>
+          </label>
+        </div>
+        <div class="single-column">
+          <input type="submit" value="Enviar" aria-href="../sitio-web/index.html" class="form-control submit" disabled>
+          <span class="spinner">
+          </span>
+          </label>
+        </div>
+      </div>
+      <br>
+      <div class="response-output" aria-hidden="true">Uno o más campos tienen un error. Por favor, revísalos e inténtalo
+        de nuevo.</div>
+    </form>
+  </div>
+</body>
+
+</html>

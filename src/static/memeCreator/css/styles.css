@@ -1,0 +1,49 @@
+body {
+  padding-top: 70px;
+  background:linear-gradient(to right, rgb(48, 111, 237), rgb(58, 46, 188)); color:whitesmoke; padding: 5px 10px;
+}
+
+.principal {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.area-canvas {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.imagen-canvas {
+  border: 2px solid #47e559;
+  background-image: linear-gradient(
+    45deg,
+    #fff9 5%,
+    #fff4 30%,
+    #fff8 30% 60%,
+    #fff4 60% 70%,
+    #fff8 70% 100%
+  );
+}
+
+.area-entrada {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.form-group {
+  width: 90%;
+  margin: 10px;
+}
+
+.boton-descarga {
+  margin-top: 10px;
+}

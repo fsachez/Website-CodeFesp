@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro</title>
+  <!-- Botstrap5 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+
+  <!-- FONT AWESOME -->
+  <script src="https://kit.fontawesome.com/b136dde408.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark mb-3">
+    <div class="container">
+      <a class="navbar-brand" href="/">Nodejs Website</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/"><i class="fa-solid fa-house-user"> </i>Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about"><i class="fas fa-building"> </i>About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact"><i class="fas fa-envelope"> </i>Contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+
+              <li><a class="dropdown-item" href="/GameTriky">Play Triky</a></li>
+              <li><a class="dropdown-item" href="/CommentSystem">Make a Comment</a></li>
+              <li><a class="dropdown-item" href="/Calculator">Calculator</a></li>
+              <li><a class="dropdown-item" href="/timeCounter">Time Counter</a></li>
+              <li><a class="dropdown-item" href="/MemeCreator">Custom Memes</a></li>
+              <li><a class="dropdown-item" href="/ConverterJson_CSV">Converter Json_csv</a></li>
+              <li><a class="dropdown-item" href="/Pomodoro">Task Timer</a></li>
+              <li><a href="/Virtualkeyboard" class="dropdown-item">Virtual keyboard</a></li>
+              <li><a href="/ImageGallery" class="dropdown-item">Image Gallery</a></li>
+              <li><a href="/WebSite" class="dropdown-item">WebSite</a></li>
+
+
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="/ShoppingCart">Shopping Cart</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="app">
+    <div id="time">
+      <div id="value"></div>
+      <div id="taskName"></div>
+    </div>
+
+    <div class="tasks-container">
+
+      <div class="form">
+        <form action="" id="form">
+          <input type="text" id="itTask">
+          <input type="submit" id="bAdd" value="Agregar Tarea">
+        </form>
+      </div>
+
+      <div id="tasks">
+        <div class="task"></div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- BOOTSTRAP 5 CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>

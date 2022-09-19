@@ -2,15 +2,28 @@ const { Router } = require("express");
 const nodemailer = require("nodemailer");
 const router = Router();
 
+
+router.get("/", (req, res) =>
+  res.render("index.ejs", { title: "Website with Node CodeFesp" })
+);
+
+router.get("/about", (req, res) =>
+  res.render("about", { title: "About CodeFesp" })
+);
+
+router.get("/contact", (req, res) =>
+  res.render("contact", { title: "Contact CodeFesp" })
+);
+
 router.post("/send-email", async (req, res) => {
-  const { name, email, phone, message } = req.body;
+  const { name, phone, email, message } = req.body;
 
   contentHTML = `
     <h1>User Information</h1>
     <ul>
       <li>Username: ${name}</li>
-      <li>User Email: ${email}</li>
       <li>Phone: ${phone}</li>
+      <li>User Email: ${email}</li>
     </ul>
     <p>${message}</p>
   `;

@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(99deg, #002fff, #00e1ff);
+  color: aliceblue;
+  text-align: center;
+  padding: 5px;
+}
+
+#app {
+  width: 300px;
+  margin: 0 auto;
+  box-shadow: 0 0 5px #000, 0 0 10px #0008, 0 0 20px #0006;
+}
+
+#player {
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  background: linear-gradient(-6.5deg, yellow, rgb(255, 128, 0), yellow);
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  /* flex-direction: row;
+  justify-content: space-between; */
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  font-size: 28px;
+  font-weight: bolder;
+}
