@@ -259,3 +259,23 @@ footer .creado-por a:hover {
     margin-bottom: 0;
   }
 }
+
+@media screen and (max-width: 510px) {
+
+  .main-secti {
+    margin-top: 15em;
+  }
+
+  .contenedor {
+    margin-top: 45em;
+  }
+
+  .main-about {
+    width: 15em;
+  }
+
+  .h1-index {
+    font-size: 3.5em;
+  }
+
+}
