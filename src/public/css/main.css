@@ -112,7 +112,6 @@ input {
 
 .contenedor {
   background: #303030;
-  margin-top: 200px;
 }
 
 footer .redes-sociales {
@@ -239,15 +238,24 @@ footer .creado-por a:hover {
 }
 
 @media screen and (max-width: 650px) {
-  .img-about {
-    margin-top: 38em;
+
+  .main-secti {
+    margin-top: 10em;
   }
 
   .contenedor {
-    margin-top: 48em;
+    margin-top: 45em;
   }
 
   .main-about {
     width: 15em;
+  }
+
+  .h1-index {
+    font-size: 3.5em;
+  }
+
+  .cont-inx {
+    margin-bottom: 0;
   }
 }
