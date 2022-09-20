@@ -2,7 +2,6 @@ const { Router } = require("express");
 const nodemailer = require("nodemailer");
 const router = Router();
 
-
 router.get("/", (req, res) =>
   res.render("index.ejs", { title: "Website with Node CodeFesp" })
 );
@@ -52,7 +51,9 @@ router.post("/send-email", async (req, res) => {
 
   console.log("Message sent", info.messageId);
 
-  res.redirect("/success.html");
+  res.render("success", {
+    title: "Success CodeFesp",
+  });
 });
 
 module.exports = router;

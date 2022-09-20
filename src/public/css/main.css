@@ -6,7 +6,7 @@ body {
   margin: 0;
   font-family: sans-serif;
   /* background: #145f91; */
-  background: linear-gradient(to right,#145f91,  #00aaff);
+  background: linear-gradient(to right, #145f91, #00aaff);
   color: #fff;
 }
 h1 {
@@ -27,7 +27,7 @@ h1 {
   box-shadow: 5px 5px 9.5px 9.5px rgba(0 0 0 / 25%);
 }
 
-.form-title{
+.form-title {
   background: deepskyblue;
   color: #fff;
   padding: 20px;
@@ -39,7 +39,7 @@ h1 {
   border-bottom: 5px solid crimson;
 }
 .contenedor-inputs {
-  padding:10px 30px;
+  padding: 10px 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -78,7 +78,8 @@ input {
   font-size: 20px;
 }
 
-.btn-enviar:active, .btn-enviar:hover {
+.btn-enviar:active,
+.btn-enviar:hover {
   transform: scale(1.05);
   -webkit-transform: scale(1.05);
   -moz-transform: scale(1.05);
@@ -94,6 +95,16 @@ input {
   font-size: 14px;
 }
 
+.picture {
+  margin-top: 1em;
+}
+
+.img-about {
+  display: block;
+  width: 100%;
+  max-width: 230px;
+  margin: 0 auto;
+}
 
 /* -------------------------------- */
 /* FOOTER */
@@ -101,13 +112,14 @@ input {
 
 .contenedor {
   background: #303030;
+  margin-top: 200px;
 }
 
 footer .redes-sociales {
   display: flex;
   align-content: center;
   justify-content: center;
-  padding: 20px;
+  padding: 10px;
   flex-wrap: wrap;
 }
 
@@ -117,7 +129,7 @@ footer .redes-sociales a {
   height: 60px;
   background: #000;
   color: #fff;
-  margin: 20px;
+  margin: 15px;
   text-align: center;
   border-radius: 100px;
   -webkit-border-radius: 100px;
@@ -172,7 +184,7 @@ footer .contenedor-icono:hover a {
 footer .creado-por {
   margin-bottom: 40px;
   text-align: center;
-  font-size: 14px;
+  font-size: 10px;
   color: #c13584;
 }
 
@@ -182,4 +194,60 @@ footer .creado-por a {
 }
 footer .creado-por a:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 950px) {
+  .img-about {
+    margin-top: 10em;
+  }
+
+  .contenedor {
+    margin-top: 15em;
+  }
+
+  .main-about {
+    width: 40em;
+  }
+}
+
+@media screen and (max-width: 850px){
+  .img-about {
+    margin-top: 12em;
+  }
+
+  .contenedor {
+    margin-top: 22em;
+  }
+
+  .main-about {
+    width: 28em;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .img-about {
+    margin-top: 25em;
+  }
+
+  .contenedor {
+    margin-top: 32em;
+  }
+
+  .main-about {
+    width: 30em;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .img-about {
+    margin-top: 38em;
+  }
+
+  .contenedor {
+    margin-top: 48em;
+  }
+
+  .main-about {
+    width: 15em;
+  }
 }
