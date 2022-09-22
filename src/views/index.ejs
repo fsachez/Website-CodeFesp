@@ -5,28 +5,166 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/estilos.css">
   <title>
     <%= title %>
   </title>
   <%- include('partials/head')%>
-  
+
 </head>
 
 <body>
 
   <%- include('partials/navigation')%>
-   
+
     <!-- Main Content -->
-    <header class="cont-inx container vh-100 d-flex justify-content-center align-items-center">
+    <!-- <header class="cont-inx container vh-100 d-flex justify-content-center align-items-center">
       <div class="d-flex flex-column justify-content-center align-items-center">
         <img src="/img/star-icon.png" alt="Logo" class="w-25 animated bounceIn animate__zoomIn">
-      <h1 class="display-1 my-5 text-uppercase fw-bold h1-index">CodeFesp</h1>
-      <a href="/about" class="btn btn-dark ">¡Veamos!</a>
+        <h1 class="display-1 my-5 text-uppercase fw-bold h1-index">CodeFesp</h1>
+        <a href="/about" class="btn btn-dark ">¡Veamos!</a>
       </div>
-    </header>
+    </header> -->
+
+    <div class="contened">
+
+      <header>
+        <div class="logo">
+          <!-- <h1>Fabian Enrique Sánchez</h1>
+          <p>Tecnologo en analisis y desarrollo de sistemas de información</p> -->
+
+          <div class="d-flex flex-column justify-content-center align-items-center">
+            <img src="/img/star-icon.png" alt="Logo" class="w-25 animated bounceIn animate__zoomIn">
+            <h1 class="display-1 my-5 text-uppercase fw-bold h1-index">CodeFesp</h1>
+            <a href="/about" class="btn btn-dark ">¡Veamos!</a>
+          </div>
+        </div>
+
+        <form action="">
+          <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
+        </form>
+
+        <div class="categorias" id="categorias">
+          <a href="#" class="activo">Todos</a>
+          <a href="#">Diseño</a>
+          <a href="#">Herramientas</a>
+          <a href="#">Novedades</a>
+          <a href="#">Entretenimiento</a>
+        </div>
+      </header>
+
+      <section class="grid" id="grid">
+        <div class="item" data-categoria="herramientas" data-etiquetas="herramientas contador cuenta días"
+          data-descripcion="¡Práctico Cuenta días, es la solución perfecta para tener presente cuanto tiempo falta para una reunión o evento específico!">
+
+          <div class="item-contenido">
+            <img src="/img/DayCounter.png" alt="DayCounter">
+          </div>
+        </div>
+
+        <div class="item" data-categoria="diseño" data-etiquetas="diseño página web portafolio "
+          data-descripcion="¡Ejemplo práctico de una página web usando flexbox Grid!">
+
+          <div class="item-contenido">
+            <img src="/img/prueb2ImgPortf.png" alt="prueb2ImgPortf">
+          </div>
+        </div>
+
+        <div class="item" data-categoria="entretenimiento" data-etiquetas="entretenimiento teclado virtual keyboard"
+          data-descripcion="¡Teclado virtual básico funcional construído usando HTML, CSS, JAVASCRIPT!">
+
+          <div class="item-contenido">
+            <img src="/img/Virtual_Keyboard.png" alt="Paisaje">
+          </div>
+        </div>
+
+        <div class="item" data-categoria="diseño" data-etiquetas="diseño imágenes"
+          data-descripcion="¡Una galería para todos tus momentos más memorables, divertidos y apasionantes!">
+
+          <div class="item-contenido">
+            <img src="/img/galeriaImgPortf.png" alt="galeriaImgPortf.png">
+          </div>
+        </div>
+
+        <div class="item" data-categoria="herramientas" data-etiquetas="herramientas pomodoro contador tiempo"
+          data-descripcion="¡Pomodoro muy útil para organizar el tiempo que se emplea en cada actividad, te ayudara a ser más productivo!">
+
+          <div class="item-contenido">
+            <img src="/img/pomodrImgPortf.png" alt="pomodrImgPortf.png">
+          </div>
+        </div>
+
+        <div class="item" data-categoria="entretenimiento" data-etiquetas="novedades entretenimiento creador memes"
+          data-descripcion="¡Divertido creador de memes que te permitirá agregar texto personalizado a tus fotos favoritas!">
+
+          <div class="item-contenido">
+            <img src="/img/memesImgPortf.png" alt="memesImgPortf.png">
+          </div>
+        </div>
+
+        <div class="item" data-categoria="novedades" data-etiquetas="novedades sistema comentarios"
+          data-descripcion="¡Sistema de comentarios básico que permite crear, eliminar y agregar likes, a los comentarios!">
+
+          <div class="item-contenido">
+            <img src="/img/comentSysImgPortf.png" alt="comentSysImgPortf.png">
+          </div>
+        </div>
+
+        <div class="item" data-categoria="novedades" data-etiquetas="novedades herramientas json csv convertir"
+          data-descripcion="Convierte archivos de JSON a CSV, facilitará el trabajo al momento de pasar información en programación!">
+
+          <div class="item-contenido">
+            <img src="/img/convertImgPortf.png" alt="convertImgPortf.png">
+          </div>
+        </div>
+
+        <div class="item" data-categoria="diseño" data-etiquetas="diseño página web portafolio"
+          data-descripcion="¡Ejemplo práctico de página web en HTML, estilos CSS, agregando imágenes y enlaces a redes sociales!">
+
+          <div class="item-contenido">
+            <img src="/img/pruebImgPortf.png" alt="pruebImgPortf.png">
+          </div>
+        </div>
+
+        <div class="item" data-categoria="entretenimiento" data-etiquetas="entretenimiento juego triky tictactoe"
+          data-descripcion="¡Pasa tu tiempo libre divirtiéndote mientras derrotas a la computadora en el juego de TRIKY!">
+
+          <div class="item-contenido">
+            <img src="/img/trikImgPortf.png" alt="trikImgPortf.png">
+          </div>
+        </div>
+
+        <div class="item" data-categoria="herramientas" data-etiquetas="herramientas calculadora matematicas"
+          data-descripcion="¡Practica calculadora que agilizara el trabajo con los números!">
+
+          <div class="item-contenido">
+            <img src="/img/calculImgPortf.png" alt="calculImgPortf.png">
+          </div>
+        </div>
+
+        <div class="item" data-categoria="novedades" data-etiquetas="novedades carshopyn compras shopyn"
+          data-descripcion="12.- ¡Completo sistema de ventas en el cual podrás adicionar más de un producto o retirarlo de tu carrito de compras, te muestra un listado de ítems, el valor unitario, el subtotal y el total!">
+
+          <div class="item-contenido">
+            <img src="/img/carshopImgPortf.png" alt="carshopImgPortf.png">
+          </div>
+        </div>
+
+      </section>
+
+      <section class="overlay" id="overlay">
+        <div class="contenedor-img">
+          <button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
+          <img src="" alt="">
+        </div>
+        <p class="descripcion"></p>
+        <!-- <a href="#">Veamos</a> -->
+      </section>
+
+    </div>
 
     <%- include('partials/footer')%>
-
+      <script src="/js/main.js"></script>
 </body>
 
 </html>
