@@ -78,14 +78,14 @@ header .categorias {
 
 header .categorias a {
   /* color: #575454; */
-  color: #30ffff;
+  color: #000;
   margin: 10px 20px;
   font-size: 18px;
   font-weight: 700;
 }
 
 header .categorias a.activo {
-  color: #000;
+  color: #30ffff;
 }
 
 /* -------------------------------- */
@@ -183,6 +183,10 @@ header .categorias a.activo {
 }
 
 .overlay a {
+  color: #fff;
+}
+
+.overlay a:hover {
   color: #fff;
 }
 
