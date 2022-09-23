@@ -38,6 +38,7 @@ app.use(
   express.static(path.join(__dirname, "static/imageGallery"))
 );
 app.use("/WebSite", express.static(path.join(__dirname, "static/sitioWeb")));
+app.use("/WebSite-css-grid", express.static(path.join(__dirname, "static/sitioWeb/1-CSS-GRID")));
 
 app.listen(app.get("port"));
 console.log(

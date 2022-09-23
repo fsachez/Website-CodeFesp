@@ -35,12 +35,16 @@ header .logo {
   margin-bottom: 40px;
 }
 
-/* header .logo-img {
-  margin-right: -690px;
-} */
+header .logo img {
+  width: 380px;
+}
 
 header .logo p {
   color: #9b9b9b;
+}
+
+header .logo a {
+  color: #30ffff;
 }
 
 header form {
@@ -73,7 +77,8 @@ header .categorias {
 }
 
 header .categorias a {
-  color: #575454;
+  /* color: #575454; */
+  color: #30ffff;
   margin: 10px 20px;
   font-size: 18px;
   font-weight: 700;
@@ -177,11 +182,15 @@ header .categorias a.activo {
   top: -20px;
 }
 
+.overlay a {
+  color: #fff;
+}
+
 /* -------------------------------- */
 /* FOOTER */
 /* -------------------------------- */
 
-footer .redes-sociales {
+/* footer .redes-sociales {
   display: flex;
   align-content: center;
   justify-content: center;
@@ -222,13 +231,13 @@ footer .redes-sociales .instagram {
 footer .redes-sociales a i {
   font-size: 20px;
   line-height: 60px;
-  /* vertical-align: middle; */
+  vertical-align: middle;
 }
 
 footer .contenedor-icono:hover a {
   animation: icono 0.5s ease;
   -webkit-animation: icono 0.5s ease;
-}
+} */
 
 @keyframes icono {
   from {
